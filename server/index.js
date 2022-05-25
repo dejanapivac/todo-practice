@@ -22,6 +22,8 @@ app.post("/todos", async (req, res) => {
       [description]
     );
 
+    //promjena
+
     res.json(newTodo.rows[0]);
   } catch (err) {
     console.error(err.message);
